@@ -1,4 +1,3 @@
-{% comment %}
 {% extends 'blog/base.html' %}
 {% block content %}
     {% for post in posts %}
@@ -12,7 +11,8 @@
     {% endfor %}
 {% endblock content %}
 
-{% endcomment %}
+{% comment %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +31,7 @@
         </div>
     {% endfor %}
 
-   {% comment %} <div>
+    <div>
         <p>published:27.01.2016, 11:25</p>
         <h2><a href="">My first post</a></h2>
         <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -41,7 +41,7 @@
         <p>published:27.01.2016, 11:25</p>
         <h2><a href="">My Second post</a></h2>
         <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    </div>{% endcomment %}
+    </div>
 </body>
 </html>
-</html>
+</html>{% endcomment %}
